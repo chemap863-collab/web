@@ -40,14 +40,34 @@
         .boton-guitarra:hover{
             color: chartreuse;
         }
+
+        .contenedor-producto {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        @media ( max-width: 768px) {
+            .contenedor-producto {
+                flex-direction: row;
+                text-align: center;
+                gap: 20px;
+                padding: 0 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <a href="tienda.html" class="boton-volver" style="font-size: 10px; padding: 5px;">← regresar</a>
+    <hr>
     <div style="display: flex;align-items: center; margin: 0;">
         <h1 style="color: #D4AF37;">GUITARRAS</h1>
-        <img src="guitasol.png" alt="guitarra" style="width: 140px; padding-left: 100px;">
+        <img src="guitasol.png" alt="guitarra" style="width: 140px;">
     </div>
+    <hr>
     <div style="display: flex; align-items: center; margin: 10px;">
         <a href="https://articulo.mercadolibre.com.mx/MLM-3026109970-docerola-takamine-gd30ce12-guitarra-12-cuerdas-nueva-envio-_JM?matt_tool=28238160" target="_blank">
             <img src="takamine negra 1.png" alt="" style="width: 110px;">
@@ -100,7 +120,7 @@
              a través de Amazon y distribuidores seleccionados) diseñada específicamente para ser la primera guitarra absoluta de un músico
             </p>
     </div>  
-    <div style="display: flex; align-items: center; margin: 0;">
+    <div style="flex-wrap: wrap; text-align: center;">
         <a href="https://www.takamine.com/" target="_blank" class="boton-guitarra" style="font-size: 0px; padding: 0; margin: 20px;"><img src="takamine logo.png" alt="" style="width: 50px;"></a>
         <a href="https://intl.fender.com/" target="_blank" class="boton-guitarra" style="font-size: 0px; padding: 0; margin: 20px;"><img src="fender.jpg" alt="" style="width: 30px;"></a>
         <a href="https://mx.yamaha.com/es/musical-instruments/guitars-basses-amps/products/" target="_blank" class="boton-guitarra" style="font-size: 0px; padding: 0; margin: 20px;"><img src="yamaha.jpg" alt="" style="width: 35px;"></a>

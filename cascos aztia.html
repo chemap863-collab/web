@@ -78,6 +78,42 @@
                 0 0 20px #D4AF37;
             }
 
+            .contenedor-producto {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+                margin: 40px auto;
+                max-width: 900px;
+            }
+
+            .imagen-box {
+                flex: 0 0 250px;
+            }
+
+            .imagen-box img {
+                width: 80%;
+                height: auto;
+            }
+
+            @media (max-width: 768px) {
+                .contenedor-producto {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px;
+                    padding: 0 20px;
+                }
+                
+                .imagen-box {
+                    flex: 0 0 auto;
+                    width: 285px;
+                }
+
+                .texto-descripcion {
+                    text-align: center;
+                }
+            }
+
         </style>    
     </head>
     <body style="background-color: black; color: white; animation: aparecer 1.5s;">
@@ -87,7 +123,9 @@
             <h1 style="font-size: 70x; color: #D4AF37;">CASCOS VR AZTIA</h1>
          </ul>
         <hr>
-        <img src="cazcos detalles 2.png" alt="cascos" style="width: 400px; margin: 30px;"> 
+        <div class="imagen-box" style="text-align: center;">
+            <img src="cazcos detalles 2.png" alt="cascos"> 
+        </div>
         <hr>
         <ul style="margin-bottom: 50px;">
             <li>
@@ -130,8 +168,8 @@
                     <button style="background-color: chartreuse;">Comprar </button>
                 </a>
             </dialog>
-            <div style="align-items: center; margin: 0;">
-                <img src="imagen aztia cascos accion.png" alt="" style=" width: 80%;margin: 30px;">
+            <div class="imagen-box">
+                <img src="imagen aztia cascos accion.png" alt="" >
             </div>
             <hr>
                 <button onclick="miVentana.showModal()" class="boton-pro">Comprar</button>

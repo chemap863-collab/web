@@ -88,6 +88,42 @@
                 0 0 20px #0da0f5; 
             }
             
+            .contenedor-producto {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+                margin: 40px auto;
+                max-width: 900px;
+            }
+
+            .imagen-box {
+                flex: 0 0 250px;
+            }
+
+            .imagen-box img {
+                width: 100%;
+                height: auto;
+            }
+
+            @media ( max-width:768px) {
+                .contenedor-producto {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px;
+                    padding: 0 20px;
+                }
+
+                .imagen-box {
+                    flex: 0 0 auto;
+                    width: 285px;
+                }
+
+                .text-descripcion {
+                    text-align: center;
+                }
+            }
+
         </style>    
 </head>
 <body>
@@ -97,8 +133,8 @@
         <h1 style="color: #D4AF37;">RELOJ AZTIA</h1>
     </ul>
     <hr>
-    <div style="display: flex; align-items: center; margin-bottom: 0;">
-        <img src="fondo cambiado.png" alt="reloj" style="width: 400px; margin: 0px;">
+    <div class="imagen-box">
+        <img src="fondo cambiado.png" alt="reloj">
     </div>
     <hr>
     <ul>

@@ -41,6 +41,23 @@
                 0 0 10px #D4AF37,
                 0 0 20px #D4AF37;
             } 
+            @media (max-width: 768px) {
+                .contenedor-producto {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px;
+                    padding: 0 20px;
+                }
+                
+                .imagen-box {
+                    flex: 0 0 auto;
+                    width: 180px;
+                }
+
+                .texto-descripcion {
+                    text-align: center;
+                }
+            }
         </style>    
 </head>
 <body>
@@ -62,10 +79,13 @@
         una forma 100% segura de comprar en linea ya que no se comprara si el producto no cumple con las especificaciones esperadas
     </p>
     <h1 style="color: #D4AF37;">PRODUCTOS</h1>
-    <div style="display: flex; align-items: center; margin-bottom: 20px; padding: 0;">
-     <a href="libro aztia.html"><img src="libro 3.png" alt="libro" style="width: 90px;margin: 20px;"></a>
-     <a href="guitarras.html"><img src="guitasol.png" alt="guitarras" style="width: 90px; margin: 40px;"></a>
-     <a href="Ropa.html"><img src="tienda de ropa.png" alt="" style="width: 90px; margin: 20px;"></a>
+    <div class="contenedor-producto">
+     <a href="libro aztia.html"><img src="libro 3.png" alt="libro" style="width: 250px"></a>
+     <a href="guitarras.html"><img src="guitasol.png" alt="guitarras" style="width: 250px;"></a>
     </div>  
+    <div class="contenedor-producto">
+        <a href="Ropa.html"><img src="tienda de ropa.png" alt="ropa" style="width: 250px "></a>
+    </div>
+    
 </body>
 </html>
